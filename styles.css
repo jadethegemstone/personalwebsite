@@ -1,0 +1,237 @@
+/* general */
+
+body {
+    background-color: rgb(120, 172, 120);
+}
+
+p {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+/* navigation bar */
+div.navBar {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    margin: auto;
+    background-color: darkolivegreen;
+    vertical-align: top;
+
+}
+
+ul.nav {
+    list-style-type: none;
+    text-align: left;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    margin:auto;
+}
+
+ul.nav li {
+    border-right: 1px solid white;
+    font-size: 18px;
+    display: inline;
+    vertical-align: top;
+    padding:12px;
+
+}
+
+ul.nav a {
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+    width: 25%
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* home page */
+h1 {
+    color: white;
+    font-style:oblique;
+    text-align: center;
+    text-shadow: 1px 3px 5px;
+}
+
+.p1 {
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+.p2 {
+    font-size: larger;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.ul1 {
+    color:white;
+    margin-top: 0px;
+}
+
+table, tr, td {
+    width: 40%;
+    padding: 5px;
+    border-width: 3px;
+    border-style: dotted;
+    border-collapse: collapse;
+    border-color: white;
+    color: white;
+    text-align: center;
+}
+
+
+/* reccs html */
+.pReccs1 {
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.pReccs2 {
+    margin-top:0px;
+    margin-bottom: 20px;
+    font-size: smaller;
+}
+
+
+input {
+    display: inline;
+}
+
+label {
+    color: white;
+}
+
+.pReccs3 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: larger;
+}
+
+.pReccs4 {
+    margin-top: 0px;
+    font-size: smaller
+}
+
+
+/* schedule html */
+h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* hobbies html */
+h3 {
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+ol {
+    margin-top: 0px;
+    color: white;
+}
+
+.p6 {
+    display: inline;
+
+}
+
+.pHob1 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+video {
+    margin-top: 0px;
+}
+
+
+/* funzies */
+/* The animation code */
+.button {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size:large;
+    font-variant: small-caps;
+    border: 5px solid rgb(16, 76, 38);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.button:hover {
+    transform: translateX(50%);
+}
+
+@keyframes movingBox {
+   0% {
+    bottom: 25%;
+    left: 25%;
+   }
+
+   25% {
+    bottom: 25%;
+    left: 75%;
+    background-color: rgb(243, 243, 159);
+   }
+
+   50% {
+    bottom: 75%;
+    left: 75%;
+    background-color: rgb(135, 135, 234);
+   }
+
+   75% {
+    bottom: 75%;
+    left: 25%;
+    background-color: rgb(150, 103, 164);
+   }
+
+   100% {
+    bottom: 25%;
+    left: 25%;
+    background-color: rgb(229, 169, 219);
+    }
+  
+}
+
+  /* The element to apply the animation to */
+  .box {
+    position: fixed;
+    bottom:25%;
+    left:25%;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(229, 169, 219);
+    animation-name:movingBox;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    
+
+  }
