@@ -7,6 +7,7 @@ body {
 p {
     color: white;
     font-family:'Courier New', Courier, monospace;
+    
 }
 
 
@@ -134,6 +135,9 @@ h2 {
 
 img {
     width: 100%;
+    outline: auto;
+    outline-color: rgb(4, 69, 4);
+    outline-width: 10px;
 }
 
 
@@ -172,8 +176,10 @@ video {
     margin-left: 20px;
     font-size:large;
     font-variant: small-caps;
-    border: 5px solid rgb(16, 76, 38);
+    border: 5px solid;
     border-radius: 5px;
+    border-color: green;
+    opacity: 50%;
     text-align: center;
 }
 
